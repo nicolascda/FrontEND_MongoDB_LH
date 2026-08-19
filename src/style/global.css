@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #020617; /* Fundo escuro digital definitivo */
+  color: #f8fafc;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+@layer components {
+  /* Utilitários atualizados para HUD / Containers de Alta Tecnologia */
+  
+  .textura-borda {
+    /* Caixa Gamer com contorno roxo suave e sombra difusa */
+    @apply border border-purple-500/20 rounded-2xl bg-slate-900 shadow-[0_0_30px_rgba(0,0,0,0.6)] transition-all duration-300;
+  }
+
+  .textura-borda-solida {
+    /* Moldura em degradê ciano/azul simulando interface de jogos */
+    @apply border border-cyan-500/30 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-950 to-slate-950 shadow-[0_0_25px_rgba(6,182,212,0.08)];
+  }
+}
